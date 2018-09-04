@@ -461,7 +461,7 @@ def hosts_by_errata_critical_installable():
    erratas=list_items(KAT_API+'errata?per_page=1000&order=issued+desc&organization_id=1&errata_restrict_installable=true&search=id%20~%20RH%25%20and%20severity%20%3D%20Critical', 'errata_id')
 
    for errata in erratas:
-      host_list=list_items(SAT_API+'hosts?per_page=1000&search=applicable_errata%20%3D%20'+errata,'name')
+      host_list=list_items(SAT_API+'hosts?per_page=1000&search=installable_errata%20%3D%20'+errata,'name')
       if any(host_list):
          item_count=str(len(host_list))
       else:
