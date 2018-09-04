@@ -12,6 +12,8 @@
 # * hosts_by_fact_selinux_current_mode
 # * hosts_by_hypervisor
 # * hosts_by_myparam (Add a global parameter with a comma seperated list of valid values and group hosts by host parameter)
+# * hosts_by_errata_critical_applicable
+# * hosts_by_errata_critical_installable
 #
 # Example usage: satellite-report-html.py hosts_by_lifecycle_environment >/var/www/html/pub/reports/hosts_by_lifecycle_environment.html
 #
