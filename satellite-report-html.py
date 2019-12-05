@@ -33,7 +33,7 @@ SAT_API = 'https://' + SAT_SERVER + '/api/v2/'
 KAT_API = 'https://' + SAT_SERVER + '/katello/api/v2/' 
 USERNAME = "myuser"
 PASSWORD = "mypassword"
-SSL_VERIFY = "/etc/rhsm/ca/katello-server-ca.pem"
+SSL_VERIFY = "/etc/pki/katello/certs/katello-server-ca.crt"
 POST_HEADERS = {'content-type': 'application/json'}
 
 def print_html_header():
